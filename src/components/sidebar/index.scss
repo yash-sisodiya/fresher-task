@@ -1,0 +1,40 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    min-width: 100px;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #727272;
+        padding: 10px 15px;
+        font-size: 13px;
+        width: 100%;
+        box-shadow: 0 0 1px #cbcbcb;
+        .arrow {
+            display: none;
+        }
+        img {
+            height: 28px;
+            width: 28px;
+        }
+    }
+    .activeNavlink {
+        font-weight: bold;
+        position: relative;
+        box-shadow: 0 0 1px #cbcbcb;
+        color: rgb(102, 51, 153);
+        .arrow {
+            position: absolute;
+            display: block;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid rgb(102, 51, 153);
+            border-left: 20px solid transparent;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
